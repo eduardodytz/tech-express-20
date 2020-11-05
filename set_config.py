@@ -12,7 +12,9 @@ device = {
 
 # Execute configuration change commands (will automatically enter into config mode)
 config_commands = [
-    'interface loopback10',
+    'interface Gi2',
+    'no shut',
+    'interface Gi3',
     'no shut'
 ]
 
@@ -20,11 +22,11 @@ config_commands = [
 net_connect = ConnectHandler(**device)
 
 
-# send_command for show commands
-output = net_connect.send_command('show ip int brief')
+# send_command for commands in exec mode
+output = net_connect.send_command('show ip int br')
 
 
-# send_config_set for commands in config Mode
+# send_config_set for commands in config mode
 #output = net_connect.send_config_set(config_commands)
 
 # Print output
