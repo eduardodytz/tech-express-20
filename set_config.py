@@ -12,9 +12,7 @@ device = {
 
 # Execute configuration change commands (will automatically enter into config mode)
 config_commands = [
-    'interface Gi2',
-    'no shut',
-    'interface Gi3',
+    'interface loopback10',
     'no shut'
 ]
 
