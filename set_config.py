@@ -28,5 +28,5 @@ output = net_connect.send_command('show ip int br')
 # send_config_set for commands in config mode
 #output = net_connect.send_config_set(config_commands)
 
-# Print output
+# Print output commands
 print(output)
