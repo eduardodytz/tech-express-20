@@ -10,6 +10,7 @@ device = {
     'port' : 22
 }
 
+
 # Execute configuration change commands (will automatically enter into config mode)
 config_commands = [
     'interface loopback10',
